@@ -1,0 +1,10 @@
+server:
+  port: 6060
+  servlet:
+    context-path: /api
+  tomcat:
+    threads:
+      max: 50
+      min-spare: 30
+    max-connections: 500
+    accept-count: 20
