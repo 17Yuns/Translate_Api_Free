@@ -65,7 +65,7 @@ server:
 #### Google翻译（经过我处理后的）
 
 ```http
-  GET api/Google/translate
+  POST api/Google/translate
 ```
 
 | 参数 | 类型     | 描述                |
@@ -77,7 +77,7 @@ server:
 #### Google翻译（没处理）
 
 ```http
-  GET api/Google/translate/Origin
+  POST api/Google/translate/Origin
 ```
 
 | 参数 | 类型     | 描述                |
@@ -97,7 +97,7 @@ server:
 #### Bing翻译（经过我处理后的）
 
 ```http
-  GET api/Bing/translate
+  POST api/Bing/translate
 ```
 
 | 参数 | 类型     | 描述                |
@@ -109,7 +109,7 @@ server:
 #### Bing翻译（没处理）
 
 ```http
-  GET api/Bing/translate/Origin
+  POST api/Bing/translate/Origin
 ```
 
 | 参数 | 类型     | 描述                |
