@@ -31,4 +31,8 @@ public class BingTranslate {
     public String translate() {
         return "请使用POST请求";
     }
+    @PostMapping("/translate/Origin")
+    public String translateOrigin(@RequestBody RequestData requestData) {
+        return bingService.translateOrigin(requestData.getText(),requestData.getTarget_lang());
+    }
 }

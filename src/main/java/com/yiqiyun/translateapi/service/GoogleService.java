@@ -6,4 +6,6 @@ package com.yiqiyun.translateapi.service;
 
 public interface GoogleService {
     String translate(String text, String targetLang);
+
+    String translateOrigin(String text, String targetLang);
 }

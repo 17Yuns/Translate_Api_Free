@@ -32,4 +32,9 @@ public class GoogleServiceImpl implements GoogleService {
         return JSON.toJSONString(resultData);
 
     }
+
+    @Override
+    public String translateOrigin(String text, String targetLang) {
+        return Google.getGoogleTranslate(text, LanguageMapping.getGoogleLang(targetLang));
+    }
 }

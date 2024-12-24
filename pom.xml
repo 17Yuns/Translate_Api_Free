@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.yiqiyun</groupId>
     <artifactId>TranslateApi</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>TranslateApi</name>
     <description>TranslateApi</description>
     <url/>

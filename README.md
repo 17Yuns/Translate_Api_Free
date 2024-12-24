@@ -60,21 +60,31 @@ server:
 
 ![image-20241109140824814](./assets/image-20241109140824814.png)
 
+## API 参考
 
+#### Google翻译（经过我处理后的）
 
-### Google
-
-接口地址：http://localhost:6060/api/Google/translate
-
-传递参数：
-
-```json
-{
- source_lang: "EN",
- target_lang: "ZH",
- text: "Hello world"
-}
+```http
+  GET api/Google/translate
 ```
+
+| 参数 | 类型     | 描述                |
+| :-------- | :------- | :------------------------- |
+| `source_lang` | `string` | **必选**. 源语言类型 |
+| `target_lang` | `string` | **必选**. 目标语言类型 |
+| `text` | `string` | **必选**. 翻译文本 |
+
+#### Google翻译（没处理）
+
+```http
+  GET api/Google/translate/Origin
+```
+
+| 参数 | 类型     | 描述                |
+| :-------- | :------- | :------------------------- |
+| `source_lang` | `string` | **必选**. 源语言类型 |
+| `target_lang` | `string` | **必选**. 目标语言类型 |
+| `text` | `string` | **必选**. 翻译文本 |
 
 相关映射关系:
 
@@ -84,19 +94,29 @@ server:
 | 映射语言 | zh-CN    | et         | bg         | is     | pl     |
 
 
+#### Bing翻译（经过我处理后的）
 
-### Bing
-接口地址：http://localhost:6060/api/Bing/translate
-
-传递参数：
-
-```json
-{
- source_lang: "EN",
- target_lang: "ZH",
- text: "Hello world"
-}
+```http
+  GET api/Bing/translate
 ```
+
+| 参数 | 类型     | 描述                |
+| :-------- | :------- | :------------------------- |
+| `source_lang` | `string` | **必选**. 源语言类型 |
+| `target_lang` | `string` | **必选**. 目标语言类型 |
+| `text` | `string` | **必选**. 翻译文本 |
+
+#### Bing翻译（没处理）
+
+```http
+  GET api/Bing/translate/Origin
+```
+
+| 参数 | 类型     | 描述                |
+| :-------- | :------- | :------------------------- |
+| `source_lang` | `string` | **必选**. 源语言类型 |
+| `target_lang` | `string` | **必选**. 目标语言类型 |
+| `text` | `string` | **必选**. 翻译文本 |
 
 相关映射关系：
 
@@ -104,8 +124,6 @@ server:
 | -------- | -------- | ---------- | ---------- | ------ | ------ |
 | 参数     | zh       | et         | bg         | is     | pl     |
 | 映射语言 | zh-Hans  | et         | bg         | is     | pl     |
-
-
 
 具体映射关系可以在**src/main/java/com/yiqiyun/translateapi/untils/LanguageMapping.java**查看有很多这里就不全部列出，
 
@@ -121,3 +139,6 @@ server:
 
 pinyin这个参数只有在 target_lang为en的时候我才会处理返回，其他一律返回Bù zhīchí
 
+## 徽标
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)

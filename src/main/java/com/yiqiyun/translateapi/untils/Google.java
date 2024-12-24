@@ -106,7 +106,7 @@ public class Google {
         String[] url = constructTranslateUrl("https://translate.s9y.in", to, getGoogleToken(text), text);
         Headers headers = Headers.of(
                 "User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36");
-        httpRequest.sendGetRequest(url[0], headers, new HttpRequest.ResponseCallback() {
+        httpRequest.sendGetRequest(url[1], headers, new HttpRequest.ResponseCallback() {
             @Override
             public void onResponse(String response) {
                 result[0] = response;

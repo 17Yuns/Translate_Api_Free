@@ -1,7 +1,5 @@
 package com.yiqiyun.translateapi.untils;
 
-import java.io.IOException;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Headers;
@@ -10,6 +8,8 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.jetbrains.annotations.NotNull;
+
+import java.io.IOException;
 
 /**
  * HTTP 请求工具类
