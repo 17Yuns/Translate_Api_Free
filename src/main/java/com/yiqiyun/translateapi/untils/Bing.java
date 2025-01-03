@@ -75,7 +75,7 @@ public class Bing {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace(); // 可根据需求处理异常，可能记录日志等
+            e.printStackTrace();
             json.put("error", "Failed to process Bing translation JSON.");
         }
 
@@ -152,8 +152,7 @@ public class Bing {
         Headers headers = Headers.of(
                 "user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36",
                 "referer", "https://cn.bing.com/translator/",
-                "origin", "https://cn.bing.com",
-                "cookie", "MUID=096F420F0C72689723B74D660D0869AB; MUIDB=096F420F0C72689723B74D660D0869AB; _EDGE_V=1; SRCHD=AF=NOFORM; SRCHUID=V=2&GUID=4AA515596EB74801BC2212A2B99B705B&dmnchg=1; _SS=SID=118F574600DF62242683583D01F163BB; _TTSS_OUT=hist=WyJhZiIsImVuIl0=; _tarLang=default=en; btstkn=Ri2Gozn6GnnrscD5AGT0ykm4grRxenOXfloAsZnH9PucxJzHT%252Fwai5ui8TOq0QIK; _TTSS_IN=hist=WyJlbiIsImFmIiwiemgtSGFucyIsImF1dG8tZGV0ZWN0Il0=; SNRHOP=I=&TS=; SRCHUSR=DOB=20201106&T=1604735730000; _EDGE_S=F=1&SID=0F0E55C7A96F6A3314845ABCA82C6B51; SRCHHPGUSR=HV=1604735900&WTS=63740332530"
+                "origin", "https://cn.bing.com"
         );
 
         RequestBody formBody = new FormBody.Builder()
